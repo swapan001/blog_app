@@ -1,7 +1,6 @@
 <h1>About this Project</h1>
 <ul>
-    <li>This is two pages web app</li>
-    <li>Before login client can only see blog </li>
+    <li>This is two pages web application</li>
         <ul>
             <li>Admin page [Admin can delete and update any user's blog after successfully login]</li>
             <li>User page   [User can only delete , create and update their own blog after sucessfully login] </li>
@@ -82,6 +81,63 @@
             </ul>
     </ol>
     <li>For Linux</li>
+        <ol>
+             <li><h4>Composer Installation</h4></li>
+            <ol>
+                <li>Open a terminal window.</li>
+                <li>Install PHP and required packages. For example, on Ubuntu:
+                    <pre><code>sudo apt updatesudo apt install php-cli php-mbstring unzip curl</code></pre>
+                </li>
+                <li>Download Composer:
+                    <pre><code>curl -sS https://getcomposer.org/installer -o composer-setup.php</code></pre>
+                </li>
+                <li>Install Composer:
+                    <pre><code>php composer-setup.php --install-dir=/usr/local/bin --filename=composer</code></pre>
+                </li>
+                <li>Verify Installation:
+                    <pre><code>composer --version</code></pre>
+                </li>
+            </ol>
+            <li><h4>XAMPP Installation</h4></li>
+            <ol>
+                <li>Download XAMPP:</li>
+                <ul>
+                    <li>Visit the XAMPP official website: <a href="https://www.apachefriends.org/">https://www.apachefriends.org/</a></li>
+                    <li>Click on the "Download" button for Linux.</li>
+                    <li>Download the `.run` installer file (e.g., `xampp-linux-x64-x.x.x-0-installer.run`).</li>
+                </ul>
+                <li>Make the Installer Executable:
+                    <pre><code>chmod +x xampp-linux-x64-x.x.x-0-installer.run</code></pre>
+                </li>
+                <li>Run the Installer:
+                    <pre><code>sudo ./xampp-linux-x64-x.x.x-0-installer.run</code></pre>
+                </li>
+                <li>Start XAMPP:
+                    <pre><code>sudo /opt/lampp/lampp start</code></pre>
+                </li>
+                <li>Access XAMPP:
+                    <ul>
+                        <li>Open your web browser and navigate to <a href="http://localhost">http://localhost</a>.</li>
+                    </ul>
+                </li>
+            </ol>
+            <li>Open phpMyAdmin from the XAMPP Control Panel:</li>
+                <ul>
+                    <li>Create a database and name it 'blog_app'.</li>
+                </ul>
+             <li>Open the `blog_app` project directory from the terminal:</li>
+            <ul>
+                <li>Run the command for database migration: `php artisan migrate`.</li>
+                <li>After a successful migration, run: `php artisan serve`.</li>
+            <ul>
+                <p>You will see a message similar to this in your terminal:</p>
+                <li>Server running on [http://127.0.0.1:8000].</li>
+                <li>Press Ctrl+C to stop the server.</li>
+                <li>You can open your browser and type `localhost:8000`, `127.0.0.1:8000`, or Ctrl + click the link shown in your terminal.</li>
+            </ul>
+            <h5>Follow these steps, and you'll be able to successfully run the application.</h5>
+        </ul>
+    </ol>
 </ol>
 <hr>
 
