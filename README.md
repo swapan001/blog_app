@@ -12,7 +12,78 @@
 
 ## LARAVEL version 11
 ## PHP VERSION 8.2.12
+## composer version 2.7.6
+<hr>
 
+<h1>How to run this web on your System </h1>
+<ol>
+    <li><h3> For Windows</h3></li>
+    <ol>
+        <li><h4>Composer Installation</h4></li>
+            <ol>
+                <li>Go through the link for Composer... https://getcomposer.org/</li>
+                <li>Download the Composer-Setup.exe file, which is the Windows installer... or  by clicking this link   https://getcomposer.org/Composer-Setup.exe </li>
+                <li>run the installer</li>
+                    <ul>
+                        <li>Double-click the Composer-Setup.exe file you downloaded.</li>
+                        <li>Follow the prompts in the installation wizard. It will guide you through installing Composer and configuring it for your PHP installation.</li>
+                    </ul>
+                <li>Verify Installation</li>
+                    <ul>
+                        <li>Open Command Prompt (cmd) or PowerShell or (Windows+R) -> then open=> 'cmd'</li>
+                        <li>Type composer --version and press Enter.</li>
+                        <li>You should see the Composer version number, confirming the installation was successful.</li>
+                    </ul>
+                <li></li>
+            </ol>
+        <li><h4>Xampp Installation</h4></li>
+            <ol>
+                <li>Download XAMPP</li>
+                <ul>
+                    <li>Visit the XAMPP official website by clicking this link... https://www.apachefriends.org/ </li>
+                    <li>Click on the "Download" button for Windows.</li>
+                    <li>Choose the version of XAMPP you want to install and download the installer.</li>
+                </ul>
+                <li>Run the Installer</li>
+                <ul>
+                    <li>Locate the downloaded .exe file (e.g., xampp-windows-x64-x.x.x-0-setup.exe) and double-click it to start the installation process.</li>
+                </ul>
+                <li>Follow Installation Wizard</li>
+                <ul>
+                    <li>The XAMPP Setup Wizard will open. Click "Next" to proceed</li>
+                    <li>Choose the components to install (i.e Apache, MySQL, PHP, etc.). By default, all components are selected</li>
+                    <li>Choose the installation folder. The default is usually C:\xampp, but you can change it if desired.</li>
+                    <li>Click "Next" and then "Install" to start the installation process.</li>
+                </ul>
+                <li>Complete Installation</li>
+                <ul>
+                    <li>Once the installation is complete, you can start the XAMPP Control Panel. You may be prompted to start the Control Panel automatically; if not, you can find it in the XAMPP installation directory.</li>
+                </ul>                
+                <li>Start Services</li>
+                <ul>
+                    <li>In the XAMPP Control Panel, start the Apache and MySQL services by clicking the "Start" buttons next to them.</li>
+                    <li>You should now be able to access http://localhost in your web browser to see the XAMPP dashboard.</li>
+                </ul>
+            </ol>
+        <li>Open phpMyAdmin from Xampp control panel.</li>
+            <ul><li>create database and named it as 'blog_app'</li></ul>
+        <li>open blog_app project directory from terminal or cmd </li>
+            <ul>
+                <li>run command for database migration~  'php artisan migrate' </li>
+                <li>After sucessfully migration run this command~ 'php artisan serve' </li>
+                    <ul>
+                        <p>You will see this types of message in your terminal</p>
+                        <li>Server running on [http://127.0.0.1:8000].
+                            Press Ctrl+C to stop the server
+                        </li>
+                        <li>You can open browser and type localhost::8000 or 127.0.0.1:8000 or Ctrl + click the link which is show in your terminal or cmd</li>
+                    </ul>
+                <h5>Follow those steps You'll able to successfully runs this application </h5>
+            </ul>
+    </ol>
+    <li>For Linux</li>
+</ol>
+<hr>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
