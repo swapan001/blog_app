@@ -1,3 +1,19 @@
+<h1>About this Project</h1>
+<ul>
+    <li>This is two pages web app</li>
+    <li>Before login client can only see blog </li>
+        <ul>
+            <li>Admin page [Admin can delete and update any user's blog after successfully login]</li>
+            <li>User page   [User can only delete , create and update their own blog after sucessfully login] </li>
+        </ul>
+    <li>Using laravel/breeze for user authentication </li>
+    
+</ul>
+
+## LARAVEL version 11
+## PHP VERSION 8.2.12
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
