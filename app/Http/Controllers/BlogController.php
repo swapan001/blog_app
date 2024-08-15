@@ -28,7 +28,7 @@ class BlogController extends Controller
         $post->shortdes=$req->shortdes;
         $post->longdes=$req->longdes;
         $post->save();
-        return redirect()->route('blog.form')->with('success','Blog added');
+        return redirect()->route('dashboard')->with('success','Blog added ...');
     }
     public function edit_form($id){
         $post=Blog::findOrFail($id);
@@ -41,13 +41,13 @@ class BlogController extends Controller
         $post->shortdes=$req->shortdes;
         $post->longdes=$req->longdes;
         $post->save();
-        return redirect()->route('blog.form')->with('success','Blog edited');
+        return redirect()->route('dashboard')->with('success','Blog edited...');
     }
 
 
     public function delete_blog($id){
         $post=Blog::findOrFail($id);
         $post->delete();
-        return redirect()->route('home');
+        return redirect()->route('dashboard')->with('success','Blog deleted successfully...');
     }
 }
